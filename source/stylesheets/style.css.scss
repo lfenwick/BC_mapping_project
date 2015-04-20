@@ -1,0 +1,81 @@
+body {
+	font-size: 1rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	background-color: black;
+	color: white;
+}
+
+.image-container {
+	position: absolute;
+	width: 33%;
+	height: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background-image: url(/images/arches.jpg);
+	background-size: cover;
+}
+
+.image-container2 {
+	position: absolute;
+	width: 33%;
+	height: 100%;
+	top: 0;
+	left: 33.5%;
+	overflow: hidden;
+	background-image: url(/images/alpacas.jpg);
+	background-size: cover;
+}
+
+.image-title {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+  	margin: 0;
+  	display: table;
+  	font-family: 'Oswald', sans-serif; 
+  	font-weight: 300;
+}
+
+.image-title span {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 3rem;
+	color: white;
+}
+
+.image-container3 {
+	position: absolute;
+	width: 33%;
+	height: 100%;
+	overflow: hidden;
+	bottom: 0;
+	right: 0;
+	background-image: url(/images/moab.jpg);
+	background-size: cover;
+}
+
+.mask {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+
+.mask:hover {
+	opacity: 0.2;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+
+.video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
