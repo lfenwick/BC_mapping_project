@@ -2,48 +2,65 @@ body {
 	font-size: 1rem;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 700;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
+}
+
+.container {
+	position: absolute;
+	top: 5%;
+	left: 2%;
+}
+
+.header h1 {
+	font-size: 3rem;
+	font-family: 'Avenir Next', sans-serif;
+	font-weight: 400;
 }
 
 .image-container {
 	position: absolute;
-	width: 33%;
-	height: 100%;
+	width: 48%;
+	height: 45%;
 	overflow: hidden;
-	top: 0;
-	left: 0;
+	top: 30%;
+	left: 1%;
 	background-image: url(/images/arches.jpg);
 	background-size: cover;
+	border: 1px solid #000000;
 }
 
 .image-container2 {
 	position: absolute;
-	width: 33%;
-	height: 100%;
-	top: 0;
-	left: 33.5%;
+	width: 48%;
+	height: 45%;
+	top: 30%;
+	left: 51%;
+	right: 2%;
 	overflow: hidden;
 	background-image: url(/images/alpacas.jpg);
 	background-size: cover;
+	border: 1px solid #000000;
 }
 
 .image-title {
 	position: absolute;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-  	margin: 0;
+	text-align: left;
+	width: 70%;
+	height: 10%;
+	padding: 20px;
+	top: 10px;
   	display: table;
-  	font-family: 'Oswald', sans-serif; 
-  	font-weight: 300;
+  	font-family: 'Avenir Next', sans-serif; 
+  	font-weight: 500;
+  	border: 40px;
 }
 
 .image-title span {
 	display: table-cell;
-	vertical-align: middle;
 	font-size: 3rem;
 	color: white;
+	opacity: 1;
 }
 
 .image-container3 {
@@ -51,6 +68,7 @@ body {
 	width: 33%;
 	height: 100%;
 	overflow: hidden;
+	top: 20%;
 	bottom: 0;
 	right: 0;
 	background-image: url(/images/moab.jpg);
@@ -78,4 +96,23 @@ body {
 	height: 100%;
 }
 
+.image-container-page3-NE {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	background-image: url(/images/moab.jpg);
+	background-size: cover;
+}
 
+.icon-container {
+	position: absolute;
+	width: 18%;
+	height: 18%;
+	left: 42.5%;
+	top: 80%;
+	background-image: url(/images/pointer.jpg);
+	background-size: cover;
+}
