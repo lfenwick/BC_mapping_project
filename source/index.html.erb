@@ -1,32 +1,54 @@
-<div class= "header">
-	<div class="container">
-		<h1 class="header"><span>Discover the Geological Map of BC</span></h3>
-	</div>
-</div>
 
-<% link_to '/page2.html' do %>
-	<div class="image-container">
-		<h3 class="image-title"><span>How geological maps are made</span></h3>
+	
+	<div id="light">
+	<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  	<video id="video" width="1920" height="1080" controls>
+      <source src="\videos\methane.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+	</div>
+	
+	<div id="fade" onClick="lightbox_close();"></div>
+
+	<div>
+	  <a href="#" onclick="lightbox_open();" class="image-container-top-left"></a>
+	</div>
+	
+	<div>
+	  <a href="#_" onclick="lightbox_open();" class="image-container-top-right"></a>
+	</div>
+
+	<div>
+	  <a href="#_" onclick="lightbox_open();" class="image-container"></a>
+	</div>
+
+<% link_to '/page4.html' do %>
+	<div class="image-container2">
+		<div class="mask"></div>
+	</div>
+<% end %>
+
+<% link_to '/page4.html' do %>
+	<div class="image-container3">
 		<div class="mask"></div>
 	</div>
 <% end %>
 
 <% link_to '/page3.html' do %>
-	<div class="image-container2">
-		<h3 class="image-title"><span>Geology of BC in five minutes</span></h3>
+	<div class="image-container4">
 		<div class="mask"></div>
 	</div>
 <% end %>
 
-
-<div class="icon-container">
-</div>
-
-
-
-<!--<% link_to '/page4.html' do %>
-<div class="image-container3">
-	<h3 class="image-title"><span>ASK AN EXPERT</span></h3>
-<div class="mask"></div>
-</div>
+<% link_to '/page3.html' do %>
+	<div class="image-container5">
+		<div class="mask"></div>
+	</div>
 <% end %>
+
+<% link_to '/page3.html' do %>
+	<div class="image-container6">
+		<div class="mask"></div>
+	</div>
+<% end %>
+
