@@ -1,22 +1,28 @@
 
-	
-	<div id="light">
-	<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+
+	<div>
+	  <a href="#" onClick="lightbox_open();" class="image-container-top-left"></a>
+	 <div id="light">
+	  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
   	<video id="video" width="1920" height="1080" controls>
       <source src="\videos\methane.mp4" type="video/mp4">
       <!--Browser does not support <video> tag -->
     </video>
+    </div>
+    <div id="fade" onClick="lightbox_close();"></div>
 	</div>
-	
-	<div id="fade" onClick="lightbox_close();"></div>
 
-	<div>
-	  <a href="#" onclick="lightbox_open();" class="image-container-top-left"></a>
+    <div>
+	  <a href="#_" onClick="lightbox_open();" class="image-container-top-right"></a>
+	 <div id="light">
+	  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  	<video id="video" width="1920" height="1080" controls>
+      <source src="\videos\methane.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+    </div>
 	</div>
-	
-	<div>
-	  <a href="#_" onclick="lightbox_open();" class="image-container-top-right"></a>
-	</div>
+
 
 	<div>
 	  <a href="#_" onclick="lightbox_open();" class="image-container"></a>

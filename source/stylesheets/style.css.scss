@@ -59,7 +59,7 @@ body {
 	overflow: hidden;
 	bottom: 36px;
 	left: 968px;
-	background-image: url(/images/what_are_the_light_blue.jpg);
+	background-image: url(/images/what_are_the_light_blue_areas.jpg);
 	background-size: cover;
 }
 
@@ -70,7 +70,7 @@ body {
 	overflow: hidden;
 	bottom: 36px;
 	left: 1280px;
-	background-image: url(/images/lines_on_east_side.jpg);
+	background-image: url(/images/what_are_the_lines_on_the_east.jpg);
 	background-size: cover;
 }
 
@@ -146,11 +146,13 @@ body {
   left: 0%;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: none;
   z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
   filter: alpha(opacity=80);
+  -webkit-animation: fadeout 4s linear forwards;
+  animation: fadeout 4s linear forwards;
 }
 
 #light {
@@ -166,13 +168,15 @@ body {
   background: #FFF;
   z-index: 1002;
   overflow: visible;
+  -webkit-animation: fadein 2s linear forwards;
+  animation: fadein 2s linear forwards;
 }
 
 #boxclose {
   float: center;
   cursor: pointer;
   color: #fff;
-  border: 1px solid #AEAEAE;
+  border: 2px solid #AEAEAE;
   border-radius: 3px;
   background: #222222;
   font-size: 50px;
@@ -202,29 +206,13 @@ light[open] {
     left: 0;
     right: 0;
 }
-@keyframes fadeToNearBlack { 
-  to { background: rgba(0,0,0,0.9); }
-}
-@keyframes goBig { 
-  to { opacity: 1; } 
-}
-nav#thumbs { 
-  display: flex; 
-} 
-nav#thumbs a { 
-  display: block; flex: 1; 
-} 
-nav#thumbs a img { 
-  width: 100%; height: auto; 
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-light[open] { 
-  animation: goBig 1s .4s forwards;
-  max-width: 1920px; 
-}
-light[open]::fade { 
-  animation: fadeToNearBlack 1s forwards; 
-}
-#fade { 
-  animation: fadeToNearBlack 1s forwards; 
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
